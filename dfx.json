@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "canisters": {
+    "sample_dapp_backend": {
+      "type": "motoko",
+      "main": "src/sample_dapp_backend/main.mo"
+    },
+    "sample_dapp_frontend": {
+      "type": "assets",
+      "source": [
+        "src/sample_dapp_frontend/assets"
+      ],
+      "dependencies": [
+        "sample_dapp_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}
